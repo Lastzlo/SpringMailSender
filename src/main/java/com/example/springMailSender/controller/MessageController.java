@@ -21,8 +21,6 @@ public class MessageController {
 
 	@GetMapping("/create")
 	public String create(Model model) {
-		System.out.println("Hello Heroku");
-		System.out.println("Hello Heroku");
 		model.addAttribute("message", new Message());
 		return "message-create";
 	}
